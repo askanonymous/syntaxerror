@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="css/enterdetails.css">
+    <link rel="shortcut icon" href="audit-logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="wrapper">
+
+        <header>
+            <div class="title">
+                Student Details
+            </div>
+        </header>
+
+        <div class="main">
+
+            <div class="signin-box">
+
+                <div class="signin-title">
+                    
+                </div>
+
+                <div class="std-details">
+    
+                    <form method="post" action="connect.php">
+                        SID: <input type="number" name="sid" required> <br> <br>
+                        Name: <input type="text" name="name" required> <br> <br>
+                        Father Name: <input type="text" name="fathername" required> <br> <br>
+                        Mother Name: <input type="text" name="mothername" required> <br> <br>
+
+                        <div>
+                            Branch: 
+                            <select name="branch">
+                            <option selected hidden>Select</option>
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="EE">EE</option>  
+                            <option value="Production">Production</option>
+                            </select> <br> <br>
+                        </div>
+
+                        <div>
+                            Batch: 
+                            <select name="batch">
+                            <option selected hidden>Select</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            </select> <br> <br>
+                        </div>
+
+                        Address: <input type="text" name="address"> <br> <br>
+                        
+                        <div>
+                            Category: 
+                            <select name="category">
+                            <option value="" selected hidden>Select</option>
+                            <option value="General">General</option>
+                            <option value="SC/ST">SC/ST</option>
+                            <option value="OBC">OBC</option>
+                            <option value="EWS">EWS</option>
+                            </select> <br> <br>
+                        </div>
+
+                        DOB: <input type="date" name="DOB"> <br> <br>
+                        
+                        <div>
+                            Gender:
+                            <select name="gender">
+                            <option value="" selected hidden>Select</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                            </select> <br> <br>
+                        </div>
+                    </form>
+
+                </div>
+
+                <button class="sign-in" onclick="location.href=''" name="submit">Submit Now</button>
+
+                <div class="signup">
+                    <a href="">Reset Form</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+
+
+</html>
